@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+### Task Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MongoDB: To store the student data
+Express: To build the server-side application
+React: To build the client-side application
+Node.js: To run the server-side application
+Redux: To manage the state of the application
+Mongoose: To model the student data and interact with the MongoDB database
+React Router: To handle client-side routing
+PDFKit: To generate the PDF file
+json2xls: To export the data to an Excel file
 
-## Available Scripts
+1] Admin login via MongoDB dynamic module Use Redux for State management
 
-In the project directory, you can run:
+- Create a login page with email and password fields
+- Use Redux to manage the state of the login form and user data
+- Create a MongoDB schema for the user data and save it to the database
+- Implement authentication using Passport.js and JWT tokens
 
-### `npm start`
+2] Add, edit and delete student record with Soft delete and Hard delete from the database
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create a page to display a list of students
+- Implement the ability to add, edit, and delete students
+- Use Mongoose to model the student data and interact with the MongoDB database
+- Implement soft delete by adding a deleted_at field to the student schema
+- Implement hard delete by removing the student data from the database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3] Student wise result management
 
-### `npm test`
+1. Select student name from List (Dynamic)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create a page to display a list of students
+- Use React Router to handle client
+- side routing to the student details page
+- Use Mongoose to retrieve the student data from the database and display it on the page
 
-### `npm run build`
+2. Enter Subject wise marks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Create a form to enter the subject wise marks for the student
+- Use Redux to manage the state of the form data
+- Implement validation for the form fields
+- Use Mongoose to update the student data in the database with the new marks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4] Generate separate result PDF file and open in new tab with fetch result and student details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Use PDFKit to generate the PDF file with the student details and result data
+- Implement a button to download the PDF file or open it in a new tab
 
-### `npm run eject`
+5] Excel export with student and result data (plugin)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Use json2xls to export the student and result data to an Excel file
+- Implement a button to download the Excel file
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6] Student & result list (JSON API format Output for integration)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Create an API to retrieve the student and result data in JSON format
+- Implement authentication to ensure that only authorized users can access the API
+- Use Mongoose to retrieve the student and result data from the database and return it in JSON format
